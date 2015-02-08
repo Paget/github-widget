@@ -1,13 +1,60 @@
 body {
   font-family: 'Lato', sans-serif;
+  background-image: url('images/photo-jay-mantry-n-206.jpeg');
+  background-size: cover;
+  background-color: grey;
 }
 
+.username-input {
+  margin: 20px 0 0 10px;
+  outline: none;
+}
 
+.submit-button {
+  margin: auto;
+  border: none;
+  border-radius: 0.25em;
+  width: 4em;
+  height: 2em;
+  font-size: 3em;
+  color: white;
+}
 
 .avatar {
   border: 3px double gray;
   margin: 1em;
-  width: 15%;
-  display: inline-block;
+  width: 25%;
   border-radius: 50%;
+}
+
+.user-info__name {
+  color: white;
+  font-size: 2em;
+  margin-left: 0.75em;
+}
+
+.show-repos {
+  margin-top: -5px;
+  margin-left: 3em;
+  border: none;
+  border-radius: 0.25em;
+  width: 100px;
+  /*width: 4em;
+  height: 2em;*/
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  /*margin-top: -5px;*/
+  list-style-type: none;
+}
+
+li {
+  color: white;
+
 }
