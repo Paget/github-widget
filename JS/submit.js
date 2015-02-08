@@ -26,7 +26,7 @@ $(function() {
   });
 
   function showRepos(url) {
-    console.log('show me the omony', typeof url);
+
     $.getJSON(url)
       .done(function (data){
         $('.repos-list').html(template2(data));
