@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>GitHub Widget</title>
+    <link href="main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
@@ -19,9 +21,26 @@
           <img class="avatar" src="<%- m.avatar_url %>"</div>
         <div class="user-info__name"><%- m.name || m.login %></div>
       </div>
+
+      <div class="repos">
+        <button class="show-repos">Show <%- m.public_repos %> Repos</button>
+        <ul class= "repos-list">
+        </ul>
+      </div>
     </script>
 
-    <div class="repos"></div>
+    <script type="text/html" id="repose">
+      <% m.forEach(function(repo){%>
+        <li>
+          <a class="repo-name" href="<%- repo.html_url %>">
+          <%- repo.name %>
+          </a>
+        </li>
+      <% }) %>
+
+    </script>
+
+
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/lodash/lodash.min.js"></script>

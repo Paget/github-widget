@@ -1,0 +1,13 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.avatar {
+  border: 3px double gray;
+  margin: 1em;
+  width: 15%;
+  display: inline-block;
+  border-radius: 50%;
+}
